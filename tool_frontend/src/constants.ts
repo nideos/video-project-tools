@@ -23,9 +23,9 @@ export type Video = {
 };
 
 export const domains = {
-    stg: process.env.APP_STG_DOMAIN || '',
-    aiyifan: process.env.APP_AIYIFAN_DOMAIN || '',
-    nivod: process.env.APP_NIVOD_DOMAIN || '',
+    stg: import.meta.env.VITE_APP_STG_DOMAIN || '',
+    aiyifan: import.meta.env.VITE_APP_AIYIFAN_DOMAIN || '',
+    nivod: import.meta.env.VITE_APP_NIVOD_DOMAIN || '',
 };
 
 export const litemodes = {
