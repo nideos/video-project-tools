@@ -9,9 +9,6 @@ const HomePage = () => (
     <Typography variant="h1" component="h1">
       影視工具
     </Typography>
-    <Typography variant="body1" component="p">
-      歡迎使用我們的內部工具！請從左側選擇一個工具開始。
-    </Typography>
   </>
 );
 
