@@ -23,9 +23,9 @@ export type Video = {
 };
 
 export const domains = {
-    stg: 'https://svideos.stg.nivod.dev',
-    aiyifan: 'https://aiyifan.nivod.pro',
-    nivod: 'https://nivod.pro',
+    stg: process.env.APP_STG_DOMAIN || '',
+    aiyifan: process.env.APP_AIYIFAN_DOMAIN || '',
+    nivod: process.env.APP_NIVOD_DOMAIN || '',
 };
 
 export const litemodes = {
