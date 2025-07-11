@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage Mockup</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background-color: #f5f5f5;
+      border-right: 1px solid #e0e0e0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #1976d2; /* MUI Primary Color */
+        margin-bottom: 20px;
+    }
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-list-item {
+      padding: 12px 15px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .nav-list-item:hover {
+      background-color: #e0e0e0;
+    }
+    .nav-list-item.active {
+      background-color: #1976d2; /* MUI Primary Color */
+      color: #ffffff;
+      font-weight: 500;
+    }
+    .main-content {
+      flex-grow: 1;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .main-content h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1976d2; /* MUI Primary Color */
+      margin-top: 0;
+    }
+    .main-content p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul class="nav-list">
+        <li class="nav-list-item active">工具一</li>
+        <li class="nav-list-item">工具二</li>
+        <li class="nav-list-item">工具三</li>
+        <li class="nav-list-item">設定</li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <h1>影視工具</h1>
+      <p>歡迎使用我們的內部工具！請從左側選擇一個工具開始。</p>
+    </main>
+  </div>
+</body>
+</html>
