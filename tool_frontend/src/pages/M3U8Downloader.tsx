@@ -27,7 +27,7 @@ const M3U8Downloader: React.FC = () => {
       parser.push(manifest);
       parser.end();
 
-      const segments = parser.manifest.segments.map((s: any) => new URL(s.uri, m3u8Url).href);
+      const segments = parser.manifest.segments.map((segment) => new URL(segment.uri, m3u8Url).href);
 
       if (!segments || segments.length === 0) {
         throw new Error('No video segments found in the M3U8 file.');
@@ -58,8 +58,8 @@ const M3U8Downloader: React.FC = () => {
       const finalVideo = new Blob(videoChunks, { type: 'video/mp2t' });
       saveAs(finalVideo, 'downloaded_video.ts');
 
-    } catch (err: any) {
-      setError(err.message || 'An unknown error occurred.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'An unknown error occurred.');
     } finally {
       setIsLoading(false);
     }
