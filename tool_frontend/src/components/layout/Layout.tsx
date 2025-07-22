@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const navItems = [
   { text: '首頁', path: '/' },
   { text: '地區限制工具', path: '/geo-restriction' },
+  { text: 'M3U8 下載器', path: '/m3u8-downloader' },
 ];
 
 const Layout = () => {
